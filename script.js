@@ -2,12 +2,11 @@
  * 
  * Texto a voz con JavaScript usando speechSynthesis
  * [TTS con JS]
- * @author parzibyte
+ * @author ElderDragoon
  * 
- * Visita: parzibyte.me/blog
  */
 // Seleccionar estos idiomas por defecto, en caso de que existan
-const IDIOMAS_PREFERIDOS = ["es-MX", "es-US", "es-ES", "es_US", "es_ES"];
+const IDIOMAS_PREFERIDOS = ["en-US", "en-GB", "en-CA"];
 
 // Esperar a que el que DOM cargue
 document.addEventListener("DOMContentLoaded", () => {
