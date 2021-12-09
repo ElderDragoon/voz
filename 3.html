@@ -11,9 +11,9 @@ document.getElementById("demo").onclick = function() {myFunction()};
 
 function myFunction() {
 const utterance = new SpeechSynthesisUtterance('Currently it is 3 o\'clock in the afternoon.');
-window.speechSynthesis.speak(utterance);
 /* utterance.lang = 'en-US'; */
 utterance.voice = "Google US English";
+window.speechSynthesis.speak(utterance);
 }
 </script>
 
