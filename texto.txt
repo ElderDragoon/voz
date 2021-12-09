@@ -1,0 +1,2 @@
+1="Administrador de sistemas";
+2="Programador en Java";
