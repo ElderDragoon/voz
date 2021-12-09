@@ -1,2 +1,2 @@
-1="Administrador de sistemas";
-2="Programador en Java";
+1="Hello there, how are you today? Please ask me about my new job. I\'m very excited, I want to talk about it.";
+2="What can you tell me about your job?";
