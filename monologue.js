@@ -48,7 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // El click del botón. Aquí sucede la magia
   $boton.addEventListener("click", () => {
-    let textoAEscuchar = $mensaje.value;
+    //let textoAEscuchar = $mensaje.value;
+    let textoAEscuchar = "Hello world. How are you today";
     if (!textoAEscuchar) return alert("Escribe el texto");
     let mensaje = new SpeechSynthesisUtterance();
     mensaje.voice = vocesDisponibles[$voces.value];
