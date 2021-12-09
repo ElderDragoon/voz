@@ -10,7 +10,12 @@
 <p id="demo">TALK TO ME</p>
 
 <script>
-var textoprueba = ('Hello there, how are you today? Please ask me about my new job. I\'m very excited, I want to talk about it.');
+var myNumeroAleatorio = Math.floor(Math.random()*2)
+if (myNumeroAleatorio == 0) {
+  var textoprueba = ('Hello there, how are you today? Please ask me about my new job. I\'m very excited, I want to talk about it.');
+} else
+   var textoprueba = ('What can you tell me about your job?');
+//var textoprueba = ('Hello there, how are you today? Please ask me about my new job. I\'m very excited, I want to talk about it.');
 document.getElementById("demo").onclick = function() {myFunction()};
 function myFunction() {
 speechSynthesis.getVoices();
@@ -18,10 +23,6 @@ document.write(textoprueba);
 document.write('<br>');
 const utterance = new SpeechSynthesisUtterance(textoprueba);
 utterance.lang = 'en-US'; 
-//utterance.voice = 'Google US English';
-//utterance.pitch = 1;  // a little lower
-//utterance.rate = 1.4;   // a little faster
-//utterance.voice = speechSynthesis.getVoices()[3];
 window.speechSynthesis.speak(utterance);
 }
 </script>
