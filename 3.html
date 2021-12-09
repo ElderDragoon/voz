@@ -4,16 +4,16 @@
 
 <p>This example uses the HTML DOM to assign an "onclick" event to a p element.</p>
 
-<p id="demo">HERE10</p>
+<p id="demo">HERE11</p>
 
 <script>
 document.getElementById("demo").onclick = function() {myFunction()};
 
 function myFunction() {
 const utterance = new SpeechSynthesisUtterance('Currently it is 3 o\'clock in the afternoon.');
-window.speechSynthesis.speak(utterance);
 utterance.lang = 'en-US';
 utterance.voice = "Google US English";
+window.speechSynthesis.speak(utterance);
 }
 </script>
 
