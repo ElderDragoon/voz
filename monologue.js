@@ -6,7 +6,7 @@
  * 
  */
 // Seleccionar estos idiomas por defecto, en caso de que existan
-const IDIOMAS_PREFERIDOS = ["en-US", "en-GB", "en-CA"];
+//const IDIOMAS_PREFERIDOS = ["en-US", "en-GB", "en-CA"];
 
 // Esperar a que el que DOM cargue
 document.addEventListener("DOMContentLoaded", () => {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     vocesDisponibles = speechSynthesis.getVoices();
     console.log({ vocesDisponibles })
-    posibleIndice = vocesDisponibles.findIndex(voz => IDIOMAS_PREFERIDOS.includes(voz.lang));
+    posibleIndice = vocesDisponibles.findIndex(voz => "en-US");
     if (posibleIndice === -1) posibleIndice = 0;
     vocesDisponibles.forEach((voz, indice) => {
       const opcion = document.createElement("option");
