@@ -4,7 +4,7 @@
 
 <p>This example uses the HTML DOM to assign an "onclick" event to a p element.</p>
 
-<p id="demo">HERE20</p>
+<p id="demo">HERE21</p>
 
 <script>
 document.getElementById("demo").onclick = function() {myFunction()};
@@ -16,7 +16,7 @@ const utterance = new SpeechSynthesisUtterance('Currently it is 3 o\'clock in th
 //utterance.voice = 'Google US English';
 //utterance.pitch = 1;  // a little lower
 //utterance.rate = 1.4;   // a little faster
-utterance.voice = speechSynthesis.getVoices()[1];
+utterance.voice = speechSynthesis.getVoices()[0];
 window.speechSynthesis.speak(utterance);
 }
 </script>
