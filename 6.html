@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <html lang="en-US">
+<head>	
+<script src="texto.txt"></script>
+</head>
 <body>
 
 <p>This is a prototype.</p>
@@ -11,10 +14,11 @@
 
 <script>
 var myNumeroAleatorio = Math.floor(Math.random()*2)
-if (myNumeroAleatorio == 0) {
+textoprueba = document.getElementById("myNumeroAleatorio").innerText=1;
+/*if (myNumeroAleatorio == 0) {
   var textoprueba = ('Hello there, how are you today? Please ask me about my new job. I\'m very excited, I want to talk about it.');
 } else
-   var textoprueba = ('What can you tell me about your job?');
+   var textoprueba = ('What can you tell me about your job?');*/
 //var textoprueba = ('Hello there, how are you today? Please ask me about my new job. I\'m very excited, I want to talk about it.');
 document.getElementById("demo").onclick = function() {myFunction()};
 function myFunction() {
