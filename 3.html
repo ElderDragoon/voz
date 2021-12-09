@@ -16,7 +16,7 @@ const utterance = new SpeechSynthesisUtterance('Currently it is 3 o\'clock in th
 //utterance.voice = 'Google US English';
 //utterance.pitch = 1;  // a little lower
 //utterance.rate = 1.4;   // a little faster
-utterance.voice = speechSynthesis.getVoices()[0];
+utterance.voice = speechSynthesis.getVoices()[3];
 window.speechSynthesis.speak(utterance);
 }
 </script>
