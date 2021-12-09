@@ -7,11 +7,13 @@
 <p>The idea is to create a program that will help people</p>
 <p>to improve speaking and listening skills</p>
 
-<p id="demo">HERE3</p>
+<p id="demo">HERE4</p>
 
 <script>
 var textoprueba = ('Hello there, how are you today? Please ask me about my new job. I\'m very excited, I want to talk about it.');
-alert (textoprueba);
+//alert (textoprueba);
+document.write(textoprueba);
+document.write('<br>');
 document.getElementById("demo").onclick = function() {myFunction()};
 function myFunction() {
 speechSynthesis.getVoices();
