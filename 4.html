@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-US">
+<body>
+
+<p>This is a prototype.</p>
+<p>The idea is to create a program that will help people</p>
+<p>to improve speaking and listening skills</p>
+
+<p id="demo">HERE3</p>
+
+<script>
+var textoprueba = ('Hello there, how are you today? Please ask me about my new job. I\'m very excited, I want to talk about it.');
+alert (textoprueba);
+document.getElementById("demo").onclick = function() {myFunction()};
+function myFunction() {
+speechSynthesis.getVoices();
+const utterance = new SpeechSynthesisUtterance(textoprueba);
+utterance.lang = 'en-US'; 
+//utterance.voice = 'Google US English';
+//utterance.pitch = 1;  // a little lower
+//utterance.rate = 1.4;   // a little faster
+//utterance.voice = speechSynthesis.getVoices()[3];
+window.speechSynthesis.speak(utterance);
+}
+</script>
+
+</body>
+</html>
